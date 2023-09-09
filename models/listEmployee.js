@@ -19,7 +19,6 @@ function listEmployee()
     };
 
     this._getEmp = function (tknv) {
-        console.log('tknv: ', tknv);
         var index = this._findIndex(tknv);
         if (index !== -1) {
           var emp = this.employees[index];

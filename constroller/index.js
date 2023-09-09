@@ -123,7 +123,6 @@ function addEmployee()
         "#tbGiolam",
         80,200,
         'Số giờ làm trong tháng 80 - 200 giờ !');
-        // console.log('valid: ', valid);
     var valid = valid1&&valid2&&valid3&&valid4&&valid5&&valid6&&valid7&&valid8;
     if (valid) {
         document.querySelector("#btnCapNhat").style.display = 'none';
@@ -137,14 +136,11 @@ function editEmp(IDTK) {
     resetForm();
     var id = IDTK;
     if (id) {
-        console.log('id: ', id);
         var modal = document.querySelector('#myModal');
         if (modal) {
             $(modal).modal('show');
         }
         var emp = listEmp._getEmp(id);
-        console.log('emp: ', emp);
-
         if (emp) {
             document.querySelector('#tknv').value       = id;
             document.querySelector('#tknv').disabled    = true;
@@ -271,7 +267,6 @@ function updateEmp()
         "#tbGiolam",
         80,200,
         'Số giờ làm trong tháng 80 - 200 giờ !');
-        // console.log('valid: ', valid);
     var valid = valid1&&valid2&&valid3&&valid4&&valid5&&valid6&&valid7&&valid8;
     if (valid) {
         listEmp._updateEmp(emp);
